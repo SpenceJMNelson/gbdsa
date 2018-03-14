@@ -125,6 +125,8 @@ textarea {
      text-decoration: none;
    }
 
+
+
    h1,h2,h3,h4,h5,h6 {
      font-weight: 600;
      line-height: 1;
@@ -166,7 +168,8 @@ textarea {
    }
 
    .nav-items .cta-left, .nav-items .cta-right{
-     border:2px solid #FE504F;
+     border:2px solid rgba(254, 80, 79, 0.25);
+
      border-radius: 100px;
    }
 
@@ -174,7 +177,6 @@ textarea {
      display: inline-block;
      padding:.5em .6em;
    }
-
 
    .spacer {
      flex-grow:1;
@@ -242,7 +244,6 @@ textarea {
 
    .block-strata-item:nth-child(odd) {
      background:#FE504F;
-     color:white;
    }
 
    .block-strata-item:nth-child(even) {
@@ -252,6 +253,28 @@ textarea {
 
    .block-strata-item a {
 
+   }
+
+   .block-content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     min-height:25vw;
+     padding:1em;
+
+   }
+
+   .block-content-ctas {
+     margin-top:2em;
+   }
+
+   .block-strata-item:nth-child(odd) .block-content {
+     background:#ffffff;
+     color:#2E2C2D;
+   }
+
+   .block-strata-item:nth-child(even) .block-content {
+     border:1px solid rgba(255,255,255,.3)
    }
 
 
